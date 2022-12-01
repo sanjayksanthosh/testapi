@@ -17,7 +17,9 @@ app.use(express.json())
 
 const usersRouter =  require('./routes/users.js')
 
-app.use('/users',usersRouter)
+app.use('/users',(req,res)=>{
+    res.json({message:"Users"})
+})
 
 app.use('/',(req,res)=>{
     res.json({message:"connected sucessfully"})
