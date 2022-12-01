@@ -21,10 +21,6 @@ app.use('/users',(req,res)=>{
     res.json({message:"Users"})
 })
 
-app.use('/',(req,res)=>{
-    res.json({message:"connected sucessfully"})
-})
-
 app.listen(3000,()=>{
     console.log('server has started')
     
