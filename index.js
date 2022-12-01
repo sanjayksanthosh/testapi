@@ -4,7 +4,7 @@ const app = express()
 const mongoose = require('mongoose')
 
 
-mongoose.connect(process.env.DATABASE_URL)
+mongoose.connect(mongodb+srv://sanjay:9FY8PLvFMYIZoqRI@cluster0.y8fjlzo.mongodb.net/test)
 
 const db = mongoose.connection
 
